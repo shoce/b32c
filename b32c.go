@@ -28,6 +28,8 @@ func main() {
 		os.Exit(1)
 	}
 	e := base32.NewEncoding(crockford)
+	// TODO io.Copy
+	// https://pkg.go.dev/encoding/base32/
 	s := e.EncodeToString(bb)
 	fmt.Println(s)
 }
